@@ -1,0 +1,36 @@
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\bin\Debug\ElevatorDispatch.exe.config
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\bin\Debug\ElevatorDispatch.exe
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\bin\Debug\ElevatorDispatch.pdb
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Debug\ElevatorDispatch.csprojResolveAssemblyReference.cache
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Debug\MainWindow.g.cs
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Debug\App.g.cs
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Debug\ElevatorDispatch_MarkupCompile.cache
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Debug\ElevatorDispatch_MarkupCompile.lref
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Debug\MainWindow.baml
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Debug\ElevatorDispatch.g.resources
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Debug\ElevatorDispatch.Properties.Resources.resources
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Debug\ElevatorDispatch.csproj.GenerateResource.Cache
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Debug\ElevatorDispatch.exe
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Debug\ElevatorDispatch.pdb
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Debug\App.baml
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Debug\Style.baml
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Debug\setting.g.cs
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Debug\setting.baml
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\bin\Debug\ElevatorDispatch.exe.config
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\obj\Debug\ElevatorDispatch.exe
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\obj\Debug\ElevatorDispatch.pdb
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\bin\Debug\ElevatorDispatch.exe
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\bin\Debug\ElevatorDispatch.pdb
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\obj\Debug\ElevatorDispatch.csprojResolveAssemblyReference.cache
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\obj\Debug\MainWindow.g.cs
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\obj\Debug\setting.g.cs
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\obj\Debug\App.g.cs
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\obj\Debug\ElevatorDispatch_MarkupCompile.cache
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\obj\Debug\ElevatorDispatch_MarkupCompile.lref
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\obj\Debug\App.baml
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\obj\Debug\MainWindow.baml
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\obj\Debug\setting.baml
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\obj\Debug\Style.baml
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\obj\Debug\ElevatorDispatch.g.resources
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\obj\Debug\ElevatorDispatch.Properties.Resources.resources
+C:\Users\Wzes\Desktop\操作系统\1552730_寸宣堂_电梯调度系统\1552730_寸宣堂_电梯调度系统\ElevatorDispatch\ElevatorDispatch\obj\Debug\ElevatorDispatch.csproj.GenerateResource.Cache

@@ -1,0 +1,5 @@
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\bin\Release\ElevatorDispatch.exe.config
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Release\MainWindow.g.cs
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Release\App.g.cs
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Release\ElevatorDispatch_MarkupCompile.cache
+F:\Visual Studio 2013\Projects\ElevatorDispatch\ElevatorDispatch\obj\Release\ElevatorDispatch_MarkupCompile.lref

@@ -1,0 +1,1180 @@
+﻿<Window x:Class="ElevatorDispatch.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:ElevatorDispatch"
+    mc:Ignorable="d"
+    Title="1552730 寸宣堂 电梯调度系统" Height="660" Width="975" HorizontalAlignment="Left" Background="#FFFCFBFB" Visibility="Visible" BorderThickness="1" WindowStartupLocation="CenterScreen" OpacityMask="#FFFCF7F7" BorderBrush="#FFEE2E2E" IsTabStop="True" IsHitTestVisible="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" ResizeMode="CanMinimize">
+
+    <StackPanel Orientation="Vertical" Margin="0,0,0,0">
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+            <Button Content="设置" Click="Button_Click" HorizontalAlignment="Left" BorderThickness="0,1" Width="965"></Button>
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,-0.333">
+
+            <StackPanel Width="180" Margin="10,7,0,1.667" Background="#FF513C3C" Height="594" 
+            >
+                <Label x:Name="first" Content="电梯 1 停在一楼" HorizontalAlignment="Center" Height="28" Width="180" Background="#FFF4F5F4" FontFamily="Adobe Caslon Pro" FontWeight="Bold" BorderBrush="#FF3D1C1C" BorderThickness="20,2" Foreground="#FF0C0101" HorizontalContentAlignment="Center" Padding="5"/>
+                <Canvas Margin="0,0,0,0" VerticalAlignment="Top">
+                    <Button x:Name="elevator_one_twenty" Style="{StaticResource RoundedGelButton}"  Content="20" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="20" Click="elevator_one_Click" />
+                    <Button x:Name="elevator_one_ninty"  Style="{StaticResource RoundedGelButton}"  Content="19" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="20" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_eighty"  Style="{StaticResource RoundedGelButton}"  Content="18" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="65" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_seventy" Style="{StaticResource RoundedGelButton}"  Content="17" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="65" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_sixty"  Style="{StaticResource RoundedGelButton}"  Content="16" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="110" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_fifty"  Style="{StaticResource RoundedGelButton}"  Content="15" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="110" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_fouty"  Style="{StaticResource RoundedGelButton}"  Content="14" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="155" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_thirty"  Style="{StaticResource RoundedGelButton}"  Content="13" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="155" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_twelve"  Style="{StaticResource RoundedGelButton}"  Content="12" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="200" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_eleven"  Style="{StaticResource RoundedGelButton}"  Content="11" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="200" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_ten"  Style="{StaticResource RoundedGelButton}"  Content="10" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="245" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_nine"  Style="{StaticResource RoundedGelButton}"  Content="9" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="245" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_eight"  Style="{StaticResource RoundedGelButton}"  Content="8" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="290" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_seven"  Style="{StaticResource RoundedGelButton}"  Content="7" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="290" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_six"  Style="{StaticResource RoundedGelButton}"  Content="6" HorizontalAlignment="Center" Height="25" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="335" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_five"  Style="{StaticResource RoundedGelButton}"  Content="5" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="335" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_four"  Style="{StaticResource RoundedGelButton}"  Content="4" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="380" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_three"  Style="{StaticResource RoundedGelButton}"  Content="3" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="380" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_two"  Style="{StaticResource RoundedGelButton}"  Content="2" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="425" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_one"  Style="{StaticResource RoundedGelButton}"  Content="1" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="425" Click="elevator_one_Click"/>
+                    <Button x:Name="elevator_one_open"   Style="{StaticResource RoundedGelButton}" Content="开" HorizontalAlignment="Center" Height="25" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="470" Click="elevator_one_open_Click"/>
+                    <Button x:Name="elevator_one_close"   Style="{StaticResource RoundedGelButton}" Content="关" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="470" Click="elevator_one_close_Click"/>
+                    <Button x:Name="elevator_one_warning"   Style="{StaticResource RoundedGelButton}" Content="警报" HorizontalAlignment="Center" Height="26" Width="38" FontSize="15" Canvas.Left="21" Canvas.Top="515"/>
+                </Canvas>
+                <StackPanel Height="560" >
+                    <Grid Height="560" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}" RenderTransformOrigin="0,0" HorizontalAlignment="Right">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40*"/>
+                            <ColumnDefinition Width="39*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid HorizontalAlignment="Left" Height="560" Margin="50,0,0,0" VerticalAlignment="Top" Width="49" Grid.ColumnSpan="2" RenderTransformOrigin="0.748,0.502">
+                            <StackPanel Orientation="Vertical" Margin="0,0,0,0"
+                                    >
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0" VerticalAlignment="Center">
+                                        <Button x:Name="elevator_one_twenty_down" Content="下"  Height="13" Width="14" FontSize="8" RenderTransformOrigin="0.571,1.41" Click="elevator_stop_Click" Background="Silver" Tag="-20"/>
+
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_twenty_show" Content="20" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_ninty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="19"/>
+                                        <Button x:Name="elevator_one_ninty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-19"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_ninty_show" Content="19" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_eighty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="18"/>
+                                        <Button x:Name="elevator_one_eighty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-18"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_eighty_show" Content="18" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_seventy_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="17"/>
+                                        <Button x:Name="elevator_one_seventy_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-17"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_seventy_show" Content="17" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_sixty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="16"/>
+                                        <Button x:Name="elevator_one_sixty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-16"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_sixty_show" Content="16" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_fifty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="15"/>
+                                        <Button x:Name="elevator_one_fifty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-15"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_fifty_show" Content="15" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_forty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="14"/>
+                                        <Button x:Name="elevator_one_forty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-14"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_forty_show" Content="14" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_thirty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="13"/>
+                                        <Button x:Name="elevator_one_thirty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-13"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_thirty_show" Content="13" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_twelve_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="12"/>
+                                        <Button x:Name="elevator_one_twelve_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-12"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_twelve_show" Content="12" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_eleven_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="11"/>
+                                        <Button x:Name="elevator_one_eleven_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-11"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_eleven_show" Content="11" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_ten_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="10"/>
+                                        <Button x:Name="elevator_one_ten_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-10"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_ten_show" Content="10" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_nine_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="9"/>
+                                        <Button x:Name="elevator_one_nine_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-9"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_nine_show" Content="9" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_eight_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="8"/>
+                                        <Button x:Name="elevator_one_eight_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-8"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_eight_show" Content="8" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_seven_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="7"/>
+                                        <Button x:Name="elevator_one_seven_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-7"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_seven_show" Content="7" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_six_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="6"/>
+                                        <Button x:Name="elevator_one_six_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-6"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_six_show" Content="6" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_five_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="5"/>
+                                        <Button x:Name="elevator_one_five_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-5"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_five_show" Content="5" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_four_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="4"/>
+                                        <Button x:Name="elevator_one_four_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-4"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_four_show" Content="4" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_three_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver"  Tag="3"/>
+                                        <Button x:Name="elevator_one_three_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver"  Tag="-3"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_three_show" Content="3" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_one_two_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="2"/>
+                                        <Button x:Name="elevator_one_two_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-2"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_two_show" Content="2" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0" VerticalAlignment="Center">
+
+                                        <Button x:Name="elevator_one_one_up" Content="上"  Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="1"/>
+
+                                    </StackPanel>
+                                    <Button x:Name="elevator_one_one_show" Content="1" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+
+                            </StackPanel>
+                        </Grid>
+                        <Label x:Name="elevator_first" HorizontalAlignment="Left" Height="24" Margin="2,533,0,0" VerticalAlignment="Top" Width="46" Content="1" Padding="0,0,0,-1" BorderThickness="2" FontWeight="Bold" FontFamily="Wide Latin" FontSize="14.667" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" HorizontalContentAlignment="Center">
+                            <Label.BorderBrush>
+                                <RadialGradientBrush>
+                                    <GradientStop Color="Black" Offset="0"/>
+                                    <GradientStop Color="#FFF71B1B" Offset="1"/>
+                                </RadialGradientBrush>
+                            </Label.BorderBrush>
+                        </Label>
+                    </Grid>
+                </StackPanel>
+
+            </StackPanel>
+            <StackPanel Width="180" Margin="10,7,0,2" Background="#FF4D3636" 
+            >
+                <Label x:Name="second" Content="电梯 2 停在一楼" HorizontalAlignment="Center" Height="28" Width="180" Background="#FFF4F5F4" FontFamily="Adobe Caslon Pro" FontWeight="Bold" BorderBrush="#FF3D1C1C" BorderThickness="20,2" Foreground="#FF0C0101" VerticalAlignment="Center" Margin="0" HorizontalContentAlignment="Center"/>
+                <Canvas Margin="0,0,0,0" VerticalAlignment="Top">
+                    <Button x:Name="elevator_two_twenty"  Style="{StaticResource RoundedGelButton}"  Content="20" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="20" Click="elevator_two_Click" />
+                    <Button x:Name="elevator_two_ninty"  Style="{StaticResource RoundedGelButton}"  Content="19" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="20" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_eighty"  Style="{StaticResource RoundedGelButton}"  Content="18" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="65" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_seventy"  Style="{StaticResource RoundedGelButton}"  Content="17" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="65" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_sixty"  Style="{StaticResource RoundedGelButton}"  Content="16" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="110" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_fifty"  Style="{StaticResource RoundedGelButton}"  Content="15" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="110" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_fouty"  Style="{StaticResource RoundedGelButton}"  Content="14" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="155" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_thirty"  Style="{StaticResource RoundedGelButton}"  Content="13" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="155" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_twelve"  Style="{StaticResource RoundedGelButton}"  Content="12" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="200" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_eleven"  Style="{StaticResource RoundedGelButton}"  Content="11" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="200" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_ten"  Style="{StaticResource RoundedGelButton}"  Content="10" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="245" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_nine"  Style="{StaticResource RoundedGelButton}"  Content="9" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="245" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_eight"  Style="{StaticResource RoundedGelButton}"  Content="8" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="290" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_seven"  Style="{StaticResource RoundedGelButton}"  Content="7" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="290" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_six"  Style="{StaticResource RoundedGelButton}"  Content="6" HorizontalAlignment="Center" Height="25" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="335" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_five"  Style="{StaticResource RoundedGelButton}"  Content="5" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="335" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_four"  Style="{StaticResource RoundedGelButton}"  Content="4" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="380" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_three"  Style="{StaticResource RoundedGelButton}"  Content="3" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="380" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_two"  Style="{StaticResource RoundedGelButton}"  Content="2" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="425" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_one"  Style="{StaticResource RoundedGelButton}"  Content="1" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="425" Click="elevator_two_Click"/>
+                    <Button x:Name="elevator_two_open"   Style="{StaticResource RoundedGelButton}"  Content="开" HorizontalAlignment="Center" Height="25" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="470" Click="elevator_two_open_Click"/>
+                    <Button x:Name="elevator_two_close"  Style="{StaticResource RoundedGelButton}"  Content="关" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="470" Click="elevator_two_close_Click"/>
+                    <Button x:Name="elevator_two_warning"  Style="{StaticResource RoundedGelButton}"  Content="警报" HorizontalAlignment="Center" Height="26" Width="38" FontSize="15" Canvas.Left="21" Canvas.Top="515"/>
+                </Canvas>
+                <StackPanel Height="560" Margin="0" >
+                    <Grid Height="560" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}" RenderTransformOrigin="0,0" HorizontalAlignment="Right">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40*"/>
+                            <ColumnDefinition Width="39*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid HorizontalAlignment="Left" Height="560" Margin="50,0,0,0" VerticalAlignment="Top" Width="49" Grid.ColumnSpan="2" RenderTransformOrigin="0.748,0.502">
+                            <StackPanel Orientation="Vertical" Margin="0,0,0,0"
+                                    >
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0" VerticalAlignment="Center">
+                                        <Button x:Name="elevator_two_twenty_down" Content="下"  Height="13" Width="14" FontSize="8" RenderTransformOrigin="0.571,1.41" Click="elevator_stop_Click" Background="Silver" Tag="-20"/>
+
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_twenty_show" Content="20" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_ninty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="19"/>
+                                        <Button x:Name="elevator_two_ninty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-19"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_ninty_show" Content="19" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_eighty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="18"/>
+                                        <Button x:Name="elevator_two_eighty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-18"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_eighty_show" Content="18" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_seventy_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="17"/>
+                                        <Button x:Name="elevator_two_seventy_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-17"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_seventy_show" Content="17" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_sixty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="16"/>
+                                        <Button x:Name="elevator_two_sixty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-16"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_sixty_show" Content="16" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_fifty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="15"/>
+                                        <Button x:Name="elevator_two_fifty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-15"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_fifty_show" Content="15" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_forty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="14"/>
+                                        <Button x:Name="elevator_two_forty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-14"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_forty_show" Content="14" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_thirty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="13"/>
+                                        <Button x:Name="elevator_two_thirty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-13"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_thirty_show" Content="13" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_twelve_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="12"/>
+                                        <Button x:Name="elevator_two_twelve_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-12"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_twelve_show" Content="12" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_eleven_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="11"/>
+                                        <Button x:Name="elevator_two_eleven_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-11"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_eleven_show" Content="11" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_ten_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="10"/>
+                                        <Button x:Name="elevator_two_ten_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-10"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_ten_show" Content="10" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_nine_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="9"/>
+                                        <Button x:Name="elevator_two_nine_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-9"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_nine_show" Content="9" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_eight_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="8"/>
+                                        <Button x:Name="elevator_two_eight_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-8"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_eight_show" Content="8" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_seven_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="7"/>
+                                        <Button x:Name="elevator_two_seven_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-7"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_seven_show" Content="7" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_six_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="6"/>
+                                        <Button x:Name="elevator_two_six_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-6"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_six_show" Content="6" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_five_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="5"/>
+                                        <Button x:Name="elevator_two_five_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-5"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_five_show" Content="5" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_four_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="4"/>
+                                        <Button x:Name="elevator_two_four_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-4"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_four_show" Content="4" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_three_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver"  Tag="3"/>
+                                        <Button x:Name="elevator_two_three_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver"  Tag="-3"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_three_show" Content="3" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_two_two_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="2"/>
+                                        <Button x:Name="elevator_two_two_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-2"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_two_show" Content="2" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0" VerticalAlignment="Center">
+
+                                        <Button x:Name="elevator_two_one_up" Content="上"  Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="1"/>
+
+                                    </StackPanel>
+                                    <Button x:Name="elevator_two_one_show" Content="1" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+
+                            </StackPanel>
+                        </Grid>
+                        <Label x:Name="elevator_second" Height="24" Margin="0,533,0,0" VerticalAlignment="Top" Content="1" RenderTransformOrigin="1,0.5" Padding="0" FontFamily="Wide Latin" FontSize="16" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Width="46" BorderThickness="2">
+                            <Label.BorderBrush>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="Black" Offset="0"/>
+                                    <GradientStop Color="#FF8B2828" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Label.BorderBrush>
+                            <Label.CacheMode>
+                                <BitmapCache/>
+                            </Label.CacheMode>
+                        </Label>
+                    </Grid>
+                </StackPanel>
+
+            </StackPanel>
+            <StackPanel Width="180" Margin="10,7,0,2" Background="#FF352828" 
+            >
+                <Label x:Name="third" Content="电梯 3 停在一楼" HorizontalAlignment="Center" Height="28" Width="180" Background="#FFF4F5F4" FontFamily="Adobe Caslon Pro" FontWeight="Bold" BorderBrush="#FF3D1C1C" BorderThickness="20,2" Foreground="#FF0C0101" HorizontalContentAlignment="Center"/>
+                <Canvas Margin="0,0,0,0" VerticalAlignment="Top">
+                    <Button x:Name="elevator_three_twenty"  Style="{StaticResource RoundedGelButton}"  Content="20" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="20" Click="elevator_three_Click" />
+                    <Button x:Name="elevator_three_ninty"  Style="{StaticResource RoundedGelButton}"  Content="19" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="20" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_eighty"  Style="{StaticResource RoundedGelButton}"  Content="18" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="65" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_seventy"  Style="{StaticResource RoundedGelButton}"  Content="17" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="65" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_sixty"  Style="{StaticResource RoundedGelButton}"  Content="16" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="110" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_fifty"  Style="{StaticResource RoundedGelButton}"  Content="15" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="110" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_fouty"  Style="{StaticResource RoundedGelButton}"  Content="14" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="155" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_thirty"  Style="{StaticResource RoundedGelButton}"  Content="13" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="155" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_twelve"  Style="{StaticResource RoundedGelButton}"  Content="12" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="200" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_eleven"   Style="{StaticResource RoundedGelButton}"  Content="11" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="200" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_ten"  Style="{StaticResource RoundedGelButton}"  Content="10" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="245" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_nine"  Style="{StaticResource RoundedGelButton}"  Content="9" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="245" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_eight"  Style="{StaticResource RoundedGelButton}"  Content="8" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="290" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_seven"  Style="{StaticResource RoundedGelButton}"  Content="7" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="290" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_six"  Style="{StaticResource RoundedGelButton}"  Content="6" HorizontalAlignment="Center" Height="25" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="335" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_five"  Style="{StaticResource RoundedGelButton}"  Content="5" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="335" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_four"  Style="{StaticResource RoundedGelButton}"  Content="4" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="380" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_three"  Style="{StaticResource RoundedGelButton}"  Content="3" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="380" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_two"  Style="{StaticResource RoundedGelButton}"  Content="2" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="425" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_one"  Style="{StaticResource RoundedGelButton}"  Content="1" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="425" Click="elevator_three_Click"/>
+                    <Button x:Name="elevator_three_open"   Style="{StaticResource RoundedGelButton}" Content="开" HorizontalAlignment="Center" Height="25" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="470" Click="elevator_three_open_Click"/>
+                    <Button x:Name="elevator_three_close"   Style="{StaticResource RoundedGelButton}" Content="关" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="470" Click="elevator_three_close_Click"/>
+                    <Button x:Name="elevator_three_warning"   Style="{StaticResource RoundedGelButton}" Content="警报" HorizontalAlignment="Center" Height="26" Width="38" FontSize="15" Canvas.Left="21" Canvas.Top="515"/>
+                </Canvas>
+                <StackPanel Height="560" >
+                    <Grid Height="560" Margin="50,0,0,0" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}" RenderTransformOrigin="0,0" HorizontalAlignment="Right">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40*"/>
+                            <ColumnDefinition Width="39*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid HorizontalAlignment="Left" Height="560" Margin="50,0,0,0" VerticalAlignment="Top" Width="49" Grid.ColumnSpan="2" RenderTransformOrigin="0,0">
+                            <StackPanel Orientation="Vertical" Margin="0,0,0,0"
+                                    >
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0" VerticalAlignment="Center">
+                                        <Button x:Name="elevator_three_twenty_down" Content="下"  Height="13" Width="14" FontSize="8" RenderTransformOrigin="0.571,1.41" Click="elevator_stop_Click" Background="Silver" Tag="-20"/>
+
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_twenty_show" Content="20" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_ninty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="19"/>
+                                        <Button x:Name="elevator_three_ninty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-19"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_ninty_show" Content="19" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_eighty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="18"/>
+                                        <Button x:Name="elevator_three_eighty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-18"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_eighty_show" Content="18" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_seventy_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="17"/>
+                                        <Button x:Name="elevator_three_seventy_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-17"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_seventy_show" Content="17" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_sixty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="16"/>
+                                        <Button x:Name="elevator_three_sixty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-16"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_sixty_show" Content="16" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_fifty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="15"/>
+                                        <Button x:Name="elevator_three_fifty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-15"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_fifty_show" Content="15" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_forty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="14"/>
+                                        <Button x:Name="elevator_three_forty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-14"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_forty_show" Content="14" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_thirty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="13"/>
+                                        <Button x:Name="elevator_three_thirty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-13"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_thirty_show" Content="13" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_twelve_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="12"/>
+                                        <Button x:Name="elevator_three_twelve_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-12"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_twelve_show" Content="12" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_eleven_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="11"/>
+                                        <Button x:Name="elevator_three_eleven_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-11"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_eleven_show" Content="11" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_ten_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="10"/>
+                                        <Button x:Name="elevator_three_ten_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-10"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_ten_show" Content="10" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_nine_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="9"/>
+                                        <Button x:Name="elevator_three_nine_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-9"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_nine_show" Content="9" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_eight_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="8"/>
+                                        <Button x:Name="elevator_three_eight_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-8"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_eight_show" Content="8" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_seven_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="7"/>
+                                        <Button x:Name="elevator_three_seven_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-7"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_seven_show" Content="7" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_six_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="6"/>
+                                        <Button x:Name="elevator_three_six_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-6"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_six_show" Content="6" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_five_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="5"/>
+                                        <Button x:Name="elevator_three_five_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-5"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_five_show" Content="5" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_four_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="4"/>
+                                        <Button x:Name="elevator_three_four_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-4"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_four_show" Content="4" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_three_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver"  Tag="3"/>
+                                        <Button x:Name="elevator_three_three_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver"  Tag="-3"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_three_show" Content="3" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_three_two_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="2"/>
+                                        <Button x:Name="elevator_three_two_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-2"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_two_show" Content="2" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0" VerticalAlignment="Center">
+
+                                        <Button x:Name="elevator_three_one_up" Content="上"  Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="1"/>
+
+                                    </StackPanel>
+                                    <Button x:Name="elevator_three_one_show" Content="1" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+
+                            </StackPanel>
+                        </Grid>
+                        <Label x:Name="elevator_third" HorizontalAlignment="Center" Height="24" Margin="0,533,0,0" VerticalAlignment="Top" Width="46" Content="1" Padding="0" BorderThickness="2" FontFamily="Wide Latin" FontSize="16" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" HorizontalContentAlignment="Center">
+                            <Label.BorderBrush>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="Black" Offset="0"/>
+                                    <GradientStop Color="#FFF22727" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Label.BorderBrush>
+                        </Label>
+                    </Grid>
+                </StackPanel>
+
+            </StackPanel>
+            <StackPanel Width="180" Margin="10,7,0,2" Background="#FF473737" 
+            >
+                <Label x:Name="fourth" Content="电梯 4 停在一楼" HorizontalAlignment="Center" Height="28" Width="180" Background="#FFF4F5F4" FontFamily="Adobe Caslon Pro" FontWeight="Bold" BorderBrush="#FF3D1C1C" BorderThickness="20,2" Foreground="#FF0C0101" HorizontalContentAlignment="Center"/>
+                <Canvas Margin="0,0,0,0" VerticalAlignment="Top">
+                    <Button x:Name="elevator_four_twenty"  Style="{StaticResource RoundedGelButton}"  Content="20" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="20" Click="elevator_four_Click" />
+                    <Button x:Name="elevator_four_ninty"  Style="{StaticResource RoundedGelButton}"  Content="19" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="20" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_eighty"  Style="{StaticResource RoundedGelButton}"  Content="18" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="65" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_seventy"  Style="{StaticResource RoundedGelButton}"  Content="17" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="65" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_sixty"  Style="{StaticResource RoundedGelButton}"  Content="16" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="110" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_fifty"  Style="{StaticResource RoundedGelButton}"  Content="15" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="110" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_fouty"  Style="{StaticResource RoundedGelButton}"  Content="14" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="155" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_thirty"  Style="{StaticResource RoundedGelButton}"  Content="13" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="155" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_twelve"  Style="{StaticResource RoundedGelButton}"  Content="12" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="200" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_eleven"  Style="{StaticResource RoundedGelButton}"  Content="11" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="200" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_ten"  Style="{StaticResource RoundedGelButton}"  Content="10" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="245" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_nine"  Style="{StaticResource RoundedGelButton}"  Content="9" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="245" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_eight"  Style="{StaticResource RoundedGelButton}"  Content="8" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="290" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_seven"  Style="{StaticResource RoundedGelButton}"  Content="7" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="290" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_six"  Style="{StaticResource RoundedGelButton}"  Content="6" HorizontalAlignment="Center" Height="25" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="335" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_five"  Style="{StaticResource RoundedGelButton}"  Content="5" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="335" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_four"  Style="{StaticResource RoundedGelButton}"  Content="4" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="380" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_three"  Style="{StaticResource RoundedGelButton}"  Content="3" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="380" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_two"  Style="{StaticResource RoundedGelButton}"  Content="2" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="425" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_one"  Style="{StaticResource RoundedGelButton}"  Content="1" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="425" Click="elevator_four_Click"/>
+                    <Button x:Name="elevator_four_open"   Style="{StaticResource RoundedGelButton}" Content="开" HorizontalAlignment="Center" Height="25" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="470" Click="elevator_four_open_Click"/>
+                    <Button x:Name="elevator_four_close"  Style="{StaticResource RoundedGelButton}"  Content="关" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="470" Click="elevator_four_close_Click"/>
+                    <Button x:Name="elevator_four_warning"   Style="{StaticResource RoundedGelButton}" Content="警报" HorizontalAlignment="Center" Height="26" Width="38" FontSize="15" Canvas.Left="21" Canvas.Top="515"/>
+                </Canvas>
+                <StackPanel Height="560" >
+                    <Grid Height="560" Margin="50,0,0,0" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}" RenderTransformOrigin="0.713,0.504" HorizontalAlignment="Right">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40*"/>
+                            <ColumnDefinition Width="39*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid HorizontalAlignment="Left" Height="560" Margin="51,0,0,0" VerticalAlignment="Top" Width="49" Grid.ColumnSpan="2" RenderTransformOrigin="0.748,0.502">
+                            <StackPanel Orientation="Vertical" Margin="0,0,0,0"
+                                    >
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0" VerticalAlignment="Center">
+                                        <Button x:Name="elevator_four_twenty_down" Content="下"  Height="13" Width="14" FontSize="8" RenderTransformOrigin="0.571,1.41" Click="elevator_stop_Click" Background="Silver" Tag="-20"/>
+
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_twenty_show" Content="20" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_ninty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="19"/>
+                                        <Button x:Name="elevator_four_ninty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-19"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_ninty_show" Content="19" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_eighty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="18"/>
+                                        <Button x:Name="elevator_four_eighty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-18"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_eighty_show" Content="18" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_seventy_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="17"/>
+                                        <Button x:Name="elevator_four_seventy_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-17"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_seventy_show" Content="17" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_sixty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="16"/>
+                                        <Button x:Name="elevator_four_sixty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-16"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_sixty_show" Content="16" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_fifty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="15"/>
+                                        <Button x:Name="elevator_four_fifty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-15"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_fifty_show" Content="15" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_forty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="14"/>
+                                        <Button x:Name="elevator_four_forty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-14"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_forty_show" Content="14" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_thirty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="13"/>
+                                        <Button x:Name="elevator_four_thirty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-13"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_thirty_show" Content="13" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_twelve_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="12"/>
+                                        <Button x:Name="elevator_four_twelve_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-12"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_twelve_show" Content="12" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_eleven_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="11"/>
+                                        <Button x:Name="elevator_four_eleven_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-11"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_eleven_show" Content="11" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_ten_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="10"/>
+                                        <Button x:Name="elevator_four_ten_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-10"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_ten_show" Content="10" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_nine_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="9"/>
+                                        <Button x:Name="elevator_four_nine_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-9"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_nine_show" Content="9" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_eight_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="8"/>
+                                        <Button x:Name="elevator_four_eight_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-8"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_eight_show" Content="8" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_seven_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="7"/>
+                                        <Button x:Name="elevator_four_seven_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-7"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_seven_show" Content="7" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_six_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="6"/>
+                                        <Button x:Name="elevator_four_six_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-6"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_six_show" Content="6" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_five_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="5"/>
+                                        <Button x:Name="elevator_four_five_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-5"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_five_show" Content="5" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_four_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="4"/>
+                                        <Button x:Name="elevator_four_four_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-4"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_four_show" Content="4" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_three_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver"  Tag="3"/>
+                                        <Button x:Name="elevator_four_three_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver"  Tag="-3"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_three_show" Content="3" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_four_two_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="2"/>
+                                        <Button x:Name="elevator_four_two_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-2"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_two_show" Content="2" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0" VerticalAlignment="Center">
+
+                                        <Button x:Name="elevator_four_one_up" Content="上"  Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="1"/>
+
+                                    </StackPanel>
+                                    <Button x:Name="elevator_four_one_show" Content="1" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+
+                            </StackPanel>
+                        </Grid>
+                        <Label x:Name="elevator_fourth" Height="24" Margin="1,533,0,0" VerticalAlignment="Top" Content="1" RenderTransformOrigin="1,0.5" Padding="0" FontFamily="Wide Latin" FontSize="16" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Width="46" BorderThickness="2">
+                            <Label.BorderBrush>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="Black" Offset="0"/>
+                                    <GradientStop Color="#FF8B2828" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Label.BorderBrush>
+                            <Label.CacheMode>
+                                <BitmapCache/>
+                            </Label.CacheMode>
+                        </Label>
+                    </Grid>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Width="180" Margin="10,7,0,2" Background="#FF2E2929" 
+            >
+                <Label x:Name="fifth" Content="电梯 5 停在一楼" HorizontalAlignment="Center" Height="28" Width="180" Background="#FFF4F5F4" FontFamily="Adobe Caslon Pro" FontWeight="Bold" BorderBrush="#FF3D1C1C" BorderThickness="20,2" Foreground="#FF0C0101" HorizontalContentAlignment="Center"/>
+                <Canvas Margin="0,0,0,0" VerticalAlignment="Top">
+                    <Button x:Name="elevator_five_twenty"  Style="{StaticResource RoundedGelButton}"  Content="20" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="20" Click="elevator_five_Click" />
+                    <Button x:Name="elevator_five_ninty"  Style="{StaticResource RoundedGelButton}"  Content="19" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="20" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_eighty"  Style="{StaticResource RoundedGelButton}"  Content="18" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="65" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_seventy"  Style="{StaticResource RoundedGelButton}"  Content="17" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="65" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_sixty"  Style="{StaticResource RoundedGelButton}"  Content="16" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="110" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_fifty"  Style="{StaticResource RoundedGelButton}"  Content="15" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="110" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_fouty"  Style="{StaticResource RoundedGelButton}"  Content="14" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="155" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_thirty"  Style="{StaticResource RoundedGelButton}"  Content="13" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="155" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_twelve"  Style="{StaticResource RoundedGelButton}"  Content="12" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="200" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_eleven"  Style="{StaticResource RoundedGelButton}"  Content="11" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="200" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_ten"  Style="{StaticResource RoundedGelButton}"  Content="10" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="245" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_nine"  Style="{StaticResource RoundedGelButton}"  Content="9" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="245" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_eight"  Style="{StaticResource RoundedGelButton}"  Content="8" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="290" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_seven"  Style="{StaticResource RoundedGelButton}"  Content="7" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="290" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_six"  Style="{StaticResource RoundedGelButton}"  Content="6" HorizontalAlignment="Center" Height="25" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="335" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_five"  Style="{StaticResource RoundedGelButton}"  Content="5" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="335" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_four"  Style="{StaticResource RoundedGelButton}"  Content="4" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="380" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_three"  Style="{StaticResource RoundedGelButton}"  Content="3" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="380" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_two"  Style="{StaticResource RoundedGelButton}"  Content="2" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="425" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_one"  Style="{StaticResource RoundedGelButton}"  Content="1" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="425" Click="elevator_five_Click"/>
+                    <Button x:Name="elevator_five_open"   Style="{StaticResource RoundedGelButton}" Content="开" HorizontalAlignment="Center" Height="25" Width="26" FontSize="15" Canvas.Left="6" Canvas.Top="470" Click="elevator_five_open_Click"/>
+                    <Button x:Name="elevator_five_close"   Style="{StaticResource RoundedGelButton}" Content="关" HorizontalAlignment="Center" Height="26" Width="26" FontSize="15" Canvas.Left="44" Canvas.Top="470" Click="elevator_five_close_Click"/>
+                    <Button x:Name="elevator_five_warning"   Style="{StaticResource RoundedGelButton}" Content="警报" HorizontalAlignment="Center" Height="26" Width="38" FontSize="15" Canvas.Left="21" Canvas.Top="515"/>
+                </Canvas>
+                <StackPanel Height="560" >
+                    <Grid Height="560" Margin="50,0,0,0" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}" RenderTransformOrigin="0,0" HorizontalAlignment="Right">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40*"/>
+                            <ColumnDefinition Width="39*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid HorizontalAlignment="Left" Height="560" Margin="50,0,0,0" VerticalAlignment="Top" Width="49" Grid.ColumnSpan="2" RenderTransformOrigin="0.748,0.502">
+                            <StackPanel Orientation="Vertical" Margin="0,0,0,0"
+                                    >
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0" VerticalAlignment="Center">
+                                        <Button x:Name="elevator_five_twenty_down" Content="下"  Height="13" Width="14" FontSize="8" RenderTransformOrigin="0.571,1.41" Click="elevator_stop_Click" Background="Silver" Tag="-20"/>
+
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_twenty_show" Content="20" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_ninty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="19"/>
+                                        <Button x:Name="elevator_five_ninty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-19"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_ninty_show" Content="19" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_eighty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="18"/>
+                                        <Button x:Name="elevator_five_eighty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-18"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_eighty_show" Content="18" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_seventy_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="17"/>
+                                        <Button x:Name="elevator_five_seventy_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-17"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_seventy_show" Content="17" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_sixty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="16"/>
+                                        <Button x:Name="elevator_five_sixty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-16"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_sixty_show" Content="16" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_fifty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="15"/>
+                                        <Button x:Name="elevator_five_fifty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-15"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_fifty_show" Content="15" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_forty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="14"/>
+                                        <Button x:Name="elevator_five_forty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-14"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_forty_show" Content="14" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_thirty_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="13"/>
+                                        <Button x:Name="elevator_five_thirty_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-13"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_thirty_show" Content="13" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_twelve_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="12"/>
+                                        <Button x:Name="elevator_five_twelve_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-12"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_twelve_show" Content="12" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_eleven_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="11"/>
+                                        <Button x:Name="elevator_five_eleven_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-11"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_eleven_show" Content="11" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_ten_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="10"/>
+                                        <Button x:Name="elevator_five_ten_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-10"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_ten_show" Content="10" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_nine_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="9"/>
+                                        <Button x:Name="elevator_five_nine_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-9"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_nine_show" Content="9" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_eight_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="8"/>
+                                        <Button x:Name="elevator_five_eight_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-8"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_eight_show" Content="8" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_seven_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="7"/>
+                                        <Button x:Name="elevator_five_seven_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-7"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_seven_show" Content="7" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_six_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="6"/>
+                                        <Button x:Name="elevator_five_six_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-6"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_six_show" Content="6" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_five_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="5"/>
+                                        <Button x:Name="elevator_five_five_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-5"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_five_show" Content="5" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_four_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="4"/>
+                                        <Button x:Name="elevator_five_four_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-4"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_four_show" Content="4" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_three_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver"  Tag="3"/>
+                                        <Button x:Name="elevator_five_three_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver"  Tag="-3"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_three_show" Content="3" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0">
+
+                                        <Button x:Name="elevator_five_two_up" Content="上" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="2"/>
+                                        <Button x:Name="elevator_five_two_down" Content="下" HorizontalAlignment="Center" Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="-2"/>
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_two_show" Content="2" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Height="26" Margin="0,0,0,2" Background="Black" 
+                                    >
+                                    <StackPanel Margin="5,0,0,0" VerticalAlignment="Center">
+
+                                        <Button x:Name="elevator_five_one_up" Content="上"  Height="13" Width="14" FontSize="8" Click="elevator_stop_Click" Background="Silver" Tag="1"/>
+
+                                    </StackPanel>
+                                    <Button x:Name="elevator_five_one_show" Content="1" HorizontalAlignment="Right" Width="14" FontSize="8" Margin="15,0,5,0"/>
+                                </StackPanel>
+
+                            </StackPanel>
+                        </Grid>
+                        <Button x:Name="elevator_fifth"   HorizontalAlignment="Left" Height="24" Margin="3,533,0,0" VerticalAlignment="Top" Width="46" Content="1" Padding="0,1" FontFamily="Wide Latin" FontSize="16" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" BorderThickness="2"/>
+                    </Grid>
+                </StackPanel>
+            </StackPanel>
+            
+
+        </StackPanel>
+    </StackPanel>
+
+
+</Window>
